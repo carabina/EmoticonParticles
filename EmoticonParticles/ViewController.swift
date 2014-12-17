@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let emoticons = "🍕🍔🍟🍗🍖🍝🍣🍱🍚🍢🍞🍳🍦🍨🍩🍮🎂🍰☕YEMEKSEPETİ"
+        let particle = EmoticonParticleView (frame: view.frame, emoticons: emoticons)
+        view.addSubview(particle)
     }
 
     override func didReceiveMemoryWarning() {

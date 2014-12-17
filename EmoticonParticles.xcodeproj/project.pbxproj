@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22C38D61A41748A0086E99F /* EmoticonParticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22C38D51A41748A0086E99F /* EmoticonParticleView.swift */; };
 		B2B1E3141A405A78008C4BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B1E3131A405A78008C4BC0 /* AppDelegate.swift */; };
 		B2B1E3161A405A78008C4BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B1E3151A405A78008C4BC0 /* ViewController.swift */; };
 		B2B1E3191A405A78008C4BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B1E3171A405A78008C4BC0 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B22C38D51A41748A0086E99F /* EmoticonParticleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonParticleView.swift; sourceTree = "<group>"; };
 		B2B1E30E1A405A78008C4BC0 /* EmoticonParticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoticonParticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B1E3121A405A78008C4BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B1E3131A405A78008C4BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		B2B1E3101A405A78008C4BC0 /* EmoticonParticles */ = {
 			isa = PBXGroup;
 			children = (
+				B22C38D51A41748A0086E99F /* EmoticonParticleView.swift */,
 				B2B1E3131A405A78008C4BC0 /* AppDelegate.swift */,
 				B2B1E3151A405A78008C4BC0 /* ViewController.swift */,
 				B2B1E3171A405A78008C4BC0 /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				B2B1E3161A405A78008C4BC0 /* ViewController.swift in Sources */,
 				B2B1E3141A405A78008C4BC0 /* AppDelegate.swift in Sources */,
+				B22C38D61A41748A0086E99F /* EmoticonParticleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +411,7 @@
 				B2B1E32F1A405A78008C4BC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2B1E3301A405A78008C4BC0 /* Build configuration list for PBXNativeTarget "EmoticonParticlesTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				B2B1E3321A405A78008C4BC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
