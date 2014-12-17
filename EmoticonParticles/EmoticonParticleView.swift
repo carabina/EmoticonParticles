@@ -30,7 +30,7 @@ class EmoticonParticleView: UIView {
         return ref.CGImage
     }
     
-    func setupEmiterLayer () {
+    func emitterCells () -> [CAEmitterCell] {
         var cells: [CAEmitterCell] = []
         for c in emoticons {
             let emitterCell = CAEmitterCell ()
@@ -47,12 +47,16 @@ class EmoticonParticleView: UIView {
             cells.append(emitterCell)
         }
         
+        return cells
+    }
+    
+    func setupEmitterLayer () {
         let emitterLayer = CAEmitterLayer ()
         emitterLayer.emitterPosition = CGPoint(x: self.bounds.size.width / 2, y: self.bounds.origin.y)
         emitterLayer.emitterZPosition = 10.0
         emitterLayer.emitterSize = CGSize(width: self.bounds.size.width, height: 0.0)
         emitterLayer.emitterShape = kCAEmitterLayerSphere
-        emitterLayer.emitterCells = cells
+        emitterLayer.emitterCells = emitterCells()
         
         self.layer.addSublayer(emitterLayer)
     }
@@ -64,7 +68,7 @@ class EmoticonParticleView: UIView {
     init(frame: CGRect, emoticons: String) {
         super.init(frame: frame)
         self.emoticons = emoticons
-        self.setupEmiterLayer()
+        self.setupEmitterLayer()
     }
 
     required init(coder aDecoder: NSCoder) {
